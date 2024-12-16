@@ -1,0 +1,11 @@
+The following CSS rule correctly uses the `background-image` property to display the image in the `::before` pseudo-element:
+
+```css
+.element::before {
+  content: '';
+  background-image: url('image.png');
+  /* other styles... */
+}
+```
+
+This approach accurately embeds the image and displays it as intended.
