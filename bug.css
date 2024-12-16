@@ -1,0 +1,9 @@
+The following CSS rule uses an invalid value for the `content` property in the `::before` pseudo-element:
+
+```css
+.element::before {
+  content: url(image.png);
+}
+```
+
+This will cause the element to not display the image properly. The `url()` function within `content` is intended for generating content from a string, not for directly embedding images.  Images should be included via the `background-image` property.
